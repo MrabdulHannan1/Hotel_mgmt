@@ -17,20 +17,38 @@
  </head>
  <body class="bg-white text-black">
   <!-- Top bar -->
-  <header class="flex justify-between items-center px-6 py-3 border-b border-gray-300">
-   <div class="text-center w-full max-w-xs absolute left-1/2 -translate-x-1/2 pointer-events-none select-none font-semibold text-base">
-    Paris Hotel Kleber .com
-   </div>
-   <div class="flex items-center space-x-1 text-sm text-gray-700 cursor-pointer select-none">
-    <i class="fas fa-globe">
-    </i>
-    <span>
-     English
-    </span>
-    <i class="fas fa-chevron-down text-xs">
-    </i>
-   </div>
-  </header>
+  <header class="w-full py-4 bg-white shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between">
+            <!-- Spacer for alignment (hidden on mobile) -->
+            <div class="w-32 h-8 hidden md:block"></div>
+            
+            <!-- Logo/Link to homepage -->
+            <a href="../index.html" class="flex items-center">
+                <span class="font-gilroy font-extrabold text-xl text-gray-900 hover:text-blue-600 transition-colors">
+                    Paris Hotel Kleber .com
+                </span>
+            </a>
+            
+            <!-- Language and translation controls -->
+            <div class="flex items-center gap-2">
+                <!-- Language Dropdown (placeholder) -->
+                <div class="relative">
+                    <button class="flex items-center gap-1 px-3 py-2 text-sm font-medium text-gray-700 hover:text-blue-600">
+                        <span>EN</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <!-- Dropdown menu would go here -->
+                </div>
+                
+                <!-- Google Translate (placeholder) -->
+                <div id="google_translate_element" class="hidden sm:block"></div>
+            </div>
+        </div>
+    </div>
+</header>
   <!-- Hero image with overlay text -->
   <section class="relative w-full max-w-full">
    <img alt="Aerial night view of Paris city with Eiffel Tower illuminated in the center and city lights glowing" class="w-full h-[400px] object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/c36155e3-4f4e-4465-f628-15a94a671357.jpg" width="1920"/>
@@ -93,18 +111,25 @@
    </form>
   </main>
   <!-- Footer -->
-  <footer class="bg-gray-900 text-white py-4">
-   <div class="max-w-7xl mx-auto flex justify-center space-x-20 font-semibold text-sm">
-    <a class="hover:underline" href="#">
-     About us
-    </a>
-    <a class="hover:underline" href="#">
-     Paris Hotel Kleber .com
-    </a>
-    <a class="hover:underline" href="#">
-     Contact us
-    </a>
-   </div>
+  <footer class="w-full py-4 bg-gray-800"> <!-- Replace bg-gray-800 with your actual myFooterBg color -->
+    <div class="mx-auto  w-full max-w-screen-2xl relative px-4 md:px-6">
+      <div class="flex items-center justify-center gap-6 md:gap-22">
+        <!-- About Us Link -->
+        <a href="/pages/about.html" class="text-base md:text-lg font-bold text-white hover:text-gray-300 transition-colors">
+          About us
+        </a>
+        
+        <!-- Logo/Link to Homepage -->
+        <a href="../index.html" class="font-gilroy text-white font-extrabold text-xl hover:text-gray-300 transition-colors">
+          Paris Hotel Kleber .com
+        </a>
+        
+        <!-- Contact Us Link -->
+        <a href="/pages/contact.html" class="text-base md:text-lg font-bold text-white hover:text-gray-300 transition-colors">
+          Contact us
+        </a>
+      </div>
+    </div>
   </footer>
   <!-- Floating icon on right side -->
   <!-- <div class="fixed right-0 top-1/2 -translate-y-1/2 z-50">
